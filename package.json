@@ -70,7 +70,8 @@
     "release:test": "npm run test-ci",
     "release:build": "npm run build",
     "release:publish": "semantic-release",
-    "release-dry-run": "semantic-release --dry-run --plugins \"@semantic-release/commit-analyzer\""
+    "release-dry-run": "semantic-release --dry-run --plugins \"@semantic-release/commit-analyzer\"",
+    "postinstall" : "npm run build"
   },
   "dependencies": {
     "@codemirror/autocomplete": "^6.18.1",
