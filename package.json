@@ -15,6 +15,7 @@
   "license": "ISC",
   "exports": {
     ".": "./index.js",
+    "./styles.css": "./styles.css",
     "./index.d.ts": "./index.d.ts",
     "./index.js": "./index.js",
     "./themes/jse-theme-dark.css": "./themes/jse-theme-dark.css",
