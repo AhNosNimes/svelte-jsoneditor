@@ -63,15 +63,14 @@
     "lint:prettier": "prettier --check --plugin prettier-plugin-svelte .",
     "lint:eslint": "eslint",
     "format": "prettier --write --plugin prettier-plugin-svelte .",
-    "prepare": "husky && cd tools && node generateDiffSequenceEsm.js && cd ..",
+    "prepare": "husky && cd tools && node generateDiffSequenceEsm.js && cd ..; npm run build",
     "release": "npm-run-all release:**",
     "release:lint": "npm run lint",
     "release:check": "npm run check",
     "release:test": "npm run test-ci",
     "release:build": "npm run build",
     "release:publish": "semantic-release",
-    "release-dry-run": "semantic-release --dry-run --plugins \"@semantic-release/commit-analyzer\"",
-    "postinstall" : "npm run build"
+    "release-dry-run": "semantic-release --dry-run --plugins \"@semantic-release/commit-analyzer\""
   },
   "dependencies": {
     "@codemirror/autocomplete": "^6.18.1",
